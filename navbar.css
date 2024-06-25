@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero {
+    background: url('Imagens/backgrounddelta.jpg') no-repeat center center;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    max-height: 100vh;
+    max-width: 100%;
+    background-position: center;
+}
+
+p {
+    padding: 0px 20px;
+    font-size: 18px;
+    text-indent: 15px;
+    color: white;
+    transition: left 1s ease-in-out;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 0px 0px 0px 125px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Home do site*/
+
+#logo {
+    max-width: 250px;
+    max-height: 150px;
+}
+
+/* Logo */
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 50px;
+    transition: all .4s ease-in-out;
+}
+
+/* Nav Links*/
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 100%;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* Animação nav links*/
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/* Animação nav links*/
+
+.espaco {
+    color: rgb(255, 255, 255);
+    top: 225px;
+    left: 150px;
+    position: relative;
+    display: block;
+    width: 100vh;
+}
+
+/*Espaço da introdução*/
+
+#titulo {
+    font-size: 50px;
+    font-weight: 800;
+    padding-bottom: 20px;
+    background: linear-gradient(#ff0000, #a200ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Primeiro titulo*/
+
+#Tintroducao {
+    color: #d6d6d6;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+/* segundo titulo e paragrafo da introdução*/
+
+main {
+    text-align: center;
+    background-color: black;
+}
+
+/* Parte principal do site */
+
+#sobre {
+    padding: 60px 0px 30px 0px;
+    font-size: 35px;
+    color: #d6d6d6;
+    text-transform: uppercase;
+    width: 100%;
+    height: auto;
+    animation: colorAnimation 5s linear infinite alternate;
+}
+
+/* Sobre nós Serviços e NOssa equipe */
+
+#servicos {
+    padding: 60px 0px 30px 0px;
+    font-size: 35px;
+    color: #d6d6d6;
+    text-transform: uppercase;
+    width: 100%;
+    height: auto;
+    animation: colorAnimation 5s linear infinite alternate;
+    transition: all .4s ease-in-out;
+}
+
+#nossaequipe {
+    padding: 60px 0px 30px 0px;
+    font-size: 35px;
+    color: #d6d6d6;
+    text-transform: uppercase;
+    width: 100%;
+    height: auto;
+    animation: colorAnimation 5s linear infinite alternate;
+}
+
+
+@keyframes colorAnimation {
+    0% {
+        color: rgb(168, 45, 82);
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: #a200ff
+    }
+}
+
+.sobrep {
+    font-size: 18px;
+    padding: 0px 0px 50px 0px;
+}
+
+/* Parágrafo do Sobre nós */
+
+.subsobre {
+    text-shadow: 1px 2px 4px rgba(255, 253, 253, 0.118);
+    padding: 20px 0px 20px 0px;
+    font-size: 30px;
+    background: linear-gradient(#ff0000, #a200ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Titulo dos quadrados */
+
+.quadrado {
+    border: 50px;
+    width: 350px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    /*espaçamento entre containers*/
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: girarSombra 4s linear infinite alternate;
+}
+
+/* Definitivamente um quadrado*/
+
+.quadrado2 {
+    border: 50px;
+    padding: 40px 4%;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    /*espaçamento entre containers*/
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: girarSombra 4s linear infinite alternate;
+}
+
+/* quadrado menor */
+
+.quadrado:hover {
+    transform: scale(1.1);
+}
+
+/* quadrado hover */
+
+.quadrado2:hover {
+    transform: scale(1.1);
+}
+
+/* quadrado menor hover */
+
+@keyframes girarSombra {
+    0% {
+        box-shadow: 0 0 15px rgba(255, 153, 0, 0.5);
+    }
+
+    25% {
+        box-shadow: 0 0 15px rgba(26, 255, 0, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(0, 238, 255, 0.5);
+    }
+
+    75% {
+        box-shadow: 0 0 15px rgba(0, 60, 255, 0.502);
+    }
+
+    100% {
+        box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    }
+}
+
+/* animação neon */
+
+.containerquadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* sei não */
+
+ul {
+    padding: 0px 40px;
+    color: rgb(231, 231, 231);
+    font-size: 18px;
+}
+
+/* Lista do quadrado 2 */
+
+/* Titulos do site */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.item {
+    text-align: center;
+}
+
+.h2sobre{
+    margin: 10px 0px 0px 45px;
+    font-size: 1.5em;
+    white-space: nowrap;
+    float: left;
+    text-align: center;
+    padding-left: 125px;
+    padding-bottom: 50px;
+    background: linear-gradient(#c2b4e9, #0011ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+}
+
+.simagens {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.pservicos {
+    
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+.foto {
+    margin: 0px 20px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 225px;
+}
+
+/* Formatação das fotos da equipe*/
+
+.fotoscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    justify-content: center;
+}
+
+.fotoscontainer h4, h5{
+    color: white;
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Container das fotos */
+
+.fotoscontainer2 {
+    display: inline-block;
+}
+
+/* Fotos de baixo */
+
+.simagens {
+    display: inline-block;
+    margin: 0 2%;
+    width: 400px;
+    height: 320px;
+}
+
+/* Imagens dos serviços */
+
+@keyframes Aparecer {
+    0% {
+        opacity: 0;
+        /* No início da animação, o texto está invisível */
+    }
+
+    200% {
+        opacity: 1;
+        /* No meio da animação, o texto está completamente visível */
+    }
+
+}
+
+.contatocontainer{
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+} /* container contato */
+
+.contatocontainer .contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px 45px;
+    width: 500px;
+    background: #1d1d2e;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.464);
+} /* forma do container */
+
+.contatocontainer form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} /* form */ 
+
+form label{
+    color: #f5f5f5;
+    font-size: 18px;
+    margin-bottom: 4px;
+} /* labels */
+
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+} /* inputs */
+
+form input:focus{
+    border-radius: 16px;
+} /* animação do clique no input */
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+} /* parte mensagem */
+
+form textarea:focus{
+    border-radius: 10px;
+} /* animação do clique na mensagem */ 
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+} /* botao */
+
+form button:hover{
+    background-color: #f5f5f5;
+    color: #101026;
+    border-radius: 10px;
+} /* hover do botao */
+
+.obgmain{
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} /* body pagina 2 */
+
+.text{
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+} /* h1 pagina 2 */
+
+.paragrafo{
+    margin-bottom: 50px;
+}/* paragrafo pagina 2 */
+
+.btn{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    transition: all 0.5s;
+} /* botao pagina 2 */
+
+footer {
+    background-color: #000018;
+    max-width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+/* Footer */
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+/* Footer Container */
+
+.socialIcons {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Icone das redes sociais */
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+/* Links dos icones das redes sociais */
+
+.socialIcons a i {
+    font-size: 32px;
+    color: black;
+    opacity: 0.9;
+}
+
+/* Esqueci */
+
+.socialIcons a:hover {
+    background-color: rgb(0, 48, 84);
+    transition: 0.7s;
+}
+
+/* Animação dos icones */
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+/* Animação dos icones */
+
+.footerNav {
+    margin: 30px 0px;
+}
+
+/* Home contato etc. */
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* Lista do footer */
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+/* Lista com link do footer*/
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+/* animação dos links */
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Copyright */
+
+.footerBottom p {
+    color: white;
+}
+
+/* Paragrafo do footer */
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/* Nomes no footer */
+
+#contato{
+    padding: 60px 0px 30px 0px;
+    font-size: 35px;
+    color: #d6d6d6;
+    text-transform: uppercase;
+    width: 100%;
+    height: auto;
+    animation: colorAnimation 5s linear infinite alternate;
+}
+
+@media (max-width: 700px) {
+
+    .hero{
+        background: black;
+        background-size: cover;
+        min-height: 50vh;
+    }
+
+    #sobre{
+        padding-top:200px ;
+    }
+
+    .espaco{
+        top: 100px;
+        left: 5px;
+    }
+
+    .containerquadrado{
+        flex-direction: column;
+    }
+    
+    #logo {
+        display: none;
+    }
+
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .espaco {
+        padding-top: 50px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #titulo {
+        text-align: center;
+        flex-direction: column;
+        margin: 10px;
+
+        width: 100%;
+    }
+
+    .navbar {
+        padding:0px 100px 0px 0px;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: 10px;
+        width: 100%;
+    }
+
+    #desenvolvimento{
+        padding-right: 150px;
+    }
+}
+
+/* Adaptação para mobile não terminei e não ta pegando*/
+
+@media (max-width: 600px){
+    .navbar a{
+        display: none;
+    }
+}
